@@ -1,26 +1,16 @@
 * {
-  	box-sizing: border-box;
-  	margin: 5px;
-  	margin-bottom: 5px;
+ 	box-sizing: border-box;
+  margin-right: 2px;
+  margin-left: 2px;
+
 }
 
 body{
 	background-color: #8BFFEE;
 }
 
-section {
-	background-color: #B5C3B9;
-	float: left;
-	height: 50%;
-	border: 1px solid black;
-}
-#container {
-  background-color: #00FFFF;
-  position: relative;
-  top: 60px;
-}
 div >h1{
-
+  border: 1px solid black;
 	float:right;
 	position: relative;
 	background-color:gray;
@@ -30,21 +20,14 @@ div >h1{
 p {
 	clear:both;
 	margin-top: 20px;
-}
-
-div >div {
-	float: left;
-	background-color: gray;
-	width: 32%;
-	margin-top: 10px;
-
+  padding: 5px;
 }
 
 .title{
 	font-size: 175%;
 	text-align: center;
 	margin-top: 50px;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .subtitle{
 	text-align: center;
@@ -53,42 +36,38 @@ div >div {
 	background-color: red;
 	padding: 0;
 }
+div >div {
+  border: 1px solid black;
+  float: left;
+  background-color: gray;
+  margin-top: 10px;
+
+}
 
 /* Desktop */
 @media (min-width: 992px) {
-  #p1 {
-    width: 80%;
-  }
-  #p2 {
-    width: 150px;
-    height: 150px;
-  }
+  .col-lg {
+  width: 32.9%;
+ }
 }
-
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  #p1 {
-    width: 50%;
-  }
-  #p2 {
-    width: 100px;
-    height: 100px;
-  }
-  body {
-    background-color: blue;
-  }
+
+  .col-md {
+  width: 49.4%;
+}
+  .tercera{
+  width: 100%;
+  
+  } 
 }
 /* Movil */
-@media (min-width: 768px) and (max-width: 991px) {
-  #p1 {
-    width: 50%;
-  }
-  #p2 {
-    width: 100px;
-    height: 100px;
-  }
-  body {
-    background-color: blue;
-  }
+@media (max-width: 767px) {
+  .col-sm {
+  width: 100%;
+  
+
+}
+  
 }
